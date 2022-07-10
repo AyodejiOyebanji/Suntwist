@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding:0;   
+}
+
+.navBarOne{
+    border: thin solid #DEE2E6;
+    height: 10vh;
+}
+.Select:hover{
+    background-color: green !important;
+}
+.currencyName{
+    transform: translateX(-165px);
+}
+.vertical {
+    border-left: 1px solid gray;
+    height: 20px;
+    position:absolute;
+    transform: translateX(135px);
+    
+}
+.verticalCur{
+    border-left: 1px solid gray;
+    height: 20px;
+    position:absolute;
+    transform: translateX(280px);
+}
+.call{
+    transform: translateX(-310px);
+
+}
+.orderPrice{
+    color: green;
+}
+.search{
+    height: 53px;
+    margin-top: 10px !important;
+}
+.bsPeopleBig{
+    margin-top: 20px;
+    margin-left: 12px;
+}
+.bsPeoplesmall{
+    display: none;
+}
+.toogle{
+    display: none;
+}
+
+
+
+
+/* 
+Responsiveness */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .navBarOne{
+        display: block;
+        height: 7vh;
+    }
+    .currencyName{
+        transform: translateX(-16px);
+    }
+    .call{
+        transform: translateX(-10px);
+    
+    }
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    .navBarOne{
+        display: block;
+    }
+    .logo{
+        width: 120px;
+    }
+    .currencyName{
+        transform: translateX(-16px);
+    }
+    .call{
+        transform: translateX(-10px);
+    
+    }
+    .bsPeoplesmall{
+        display: block;
+    }
+    
+}
+@media only screen and (max-width: 482px) and (min-width: 0px) {
+    .navBarOne{
+        display: none;
+    }
+}
+
