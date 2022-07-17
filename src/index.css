@@ -47,6 +47,9 @@
 .toogle{
     display: none;
 }
+.logo{
+    width:18%;
+}
 
 
 
@@ -73,7 +76,7 @@ Responsiveness */
         display: block;
     }
     .logo{
-        width: 120px;
+        width: 18%;
     }
     .currencyName{
         transform: translateX(-16px);

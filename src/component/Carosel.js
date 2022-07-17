@@ -1,14 +1,13 @@
-import React from 'react'
-import "../styles/carosel.css"
+import React from "react";
+import "../styles/carosel.css";
 // import imgOne from "../Image/healty.jpg"
 // import imgTwo from "../Image/fruita.jfif"
 // import imgThree from "../Image/fruit.jfif"
 
 function Carosel() {
-    return (
-        <>
-
-{/* <div class="swiffy-slider slider-nav-round slider-nav-animation slider-nav-animation-fadein slider-item-last-visible">
+  return (
+    <>
+      {/* <div class="swiffy-slider slider-nav-round slider-nav-animation slider-nav-animation-fadein slider-item-last-visible">
     <ul class="slider-container">
         <li class="">
             <div class="card rounded-0 h-100">
@@ -69,46 +68,32 @@ function Carosel() {
     </div>
 </div>   */}
 
-        
-            <div className='carosel'>
-                <div className='container'>
-           <div className='row'>
-               <div className='col-12'>
-                  <div className='row'>
-                      <div className='discountSection col-5   my-md-5 my-lg-5 '>
-                          <div className='NaturalText '>
-                        <h6 className="natural ">Natural & Organic </h6>
-                        <h1 className='forty '>-40%  Offer All Products.</h1>
-                        </div>
-                        <div className='my-md-5 '>
-                        <button className="shopNowBtn">Shop Now</button>
-
-                          </div>
-
-                        
-
-                      </div>
-                      <div className='col-5  m-md-5 m-lg-5 '>
-                        <div className='fruits'>
-                            <img src="../Image/fruit.jfif" alt="" srcset="" />
-
-                        </div>
-
-                      </div>
-
+      <div className="carosel">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <div className="row">
+                <div className="discountSection col-5   my-md-5 my-lg-5 ">
+                  <div className="NaturalText ">
+                    <h6 className="natural ">Natural & Organic </h6>
+                    <h1 className="forty ">-40% Offer All Products.</h1>
                   </div>
-                   </div>
-
-               </div>
-               </div>
-
-           </div>
-
-                
-    
-            
-        </>
-    )
+                  <div className="my-md-5 ">
+                    <button className="shopNowBtn">Shop Now</button>
+                  </div>
+                </div>
+                <div className="col-5  m-md-5 m-lg-5 ">
+                  <div className="fruits">
+                    <img src="../Image/fruit.jfif" alt="" srcset="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default Carosel
+export default Carosel;

@@ -3,7 +3,6 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-import {Route, Routes} from "react-router-dom"
 
 function NavBarOne() {
   const [language, setLanguage] = React.useState("");
@@ -21,29 +20,26 @@ function NavBarOne() {
       <nav class="navBarOne navbar  ">
         <div class="container">
           <div className="language">
-          <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
-            <InputLabel id="demo-simple-select-standard-label">
-              Language
-            </InputLabel>
-            <Select
-              labelId="demo-simple-select-standard-label"
-              id="demo-simple-select-standard"
-              value={language}
-              onChange={handleChange}
-              label="Language"
-            >
-              <MenuItem value="">
-                <em>None</em>
-              </MenuItem>
-              <MenuItem value={"English"}>English</MenuItem>
-              <MenuItem value={"French"}>French</MenuItem>
-              <MenuItem value={"Spanish"}>Spanish</MenuItem>
-            </Select>
-          </FormControl>
-
+            <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
+              <InputLabel id="demo-simple-select-standard-label">
+                Language
+              </InputLabel>
+              <Select
+                labelId="demo-simple-select-standard-label"
+                id="demo-simple-select-standard"
+                value={language}
+                onChange={handleChange}
+                label="Language"
+              >
+                <MenuItem value="">
+                  <em>None</em>
+                </MenuItem>
+                <MenuItem value={"English"}>English</MenuItem>
+                <MenuItem value={"French"}>French</MenuItem>
+                <MenuItem value={"Spanish"}>Spanish</MenuItem>
+              </Select>
+            </FormControl>
           </div>
-    
-
 
           <div class="vertical"></div>
 
