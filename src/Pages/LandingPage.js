@@ -6,6 +6,7 @@ import SubNav from "../component/SubNav"
 import Services from "../component/Services"
 import Item from '../component/Item'
 import Card from '../component/Card'
+import Footer from '../component/Footer'
 
 function LandingPage() {
     return (
@@ -18,6 +19,7 @@ function LandingPage() {
             <Services />
             <Item />
             <Card />
+            <Footer/>
 
         </div>
     )

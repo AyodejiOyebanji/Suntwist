@@ -1,17 +1,19 @@
 import React from "react";
 import LandingPage from "./Pages/LandingPage";
-import MoreDetails from "./Pages/MoreDetails"
-import { useSelector } from "react-redux"
-import { Routes, Route } from "react-router-dom"
+import MoreDetails from "./Pages/MoreDetails";
+import { useSelector } from "react-redux";
+import { Routes, Route } from "react-router-dom";
 import ShippingAddress from "./Pages/ShippingAddress";
-import Cart from "./Pages/Cart"
-
+import Cart from "./Pages/Cart";
+import PaymentMethod from "./Pages/PaymentMethod";
+import PaystackdetailsPage from "./Pages/PaystackdetailsPage"
+import PaymentSummary from "./Pages/PaymentSummary"
+import Footer from "./component/Footer";
 const App = () => {
   const globalState = useSelector((state) => {
-    return state.price
-  })
+    return state.price;
+  });
   console.log(globalState);
-
 
   return (
     <>
@@ -23,11 +25,16 @@ const App = () => {
 
         <Route path="/cart" element={<Cart />} />
 
+        <Route path="/paymentmethod" element={<PaymentMethod />} />
+        <Route path="/paystackdetailspage" element={<PaystackdetailsPage />} />
+        <Route path="/PaymentSummary" element={<PaymentSummary />} />
+       
+        
+        
 
+        
 
       </Routes>
-
-
     </>
   );
 };

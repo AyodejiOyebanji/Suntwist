@@ -15,7 +15,8 @@ function Cart() {
     setcart(suntwistArray);
   }, []);
 
-  const addMore = (i) => {};
+  const addMore = (i) => {
+  };
 
   return (
     <div>
@@ -29,7 +30,7 @@ function Cart() {
           <div className="row">
             <div className="col-12 mt-4">
               <div className="row">
-                <div className="col-xm-10 col-md-10 col-lg-8 col-xl-8 col-xxl-8">
+                <div className="col-xm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8">
                   <div className="cartHeading  ">
                     <h5 className="p-2">Cart(65)</h5>
                   </div>
@@ -60,7 +61,7 @@ function Cart() {
                             <div className=" col-3">
                               <h5 className="text-end">#{eachItem.price}</h5>
                               <div className="float-end">
-                                <button className="actionBtn">-</button>
+                                <button className="minusBtn">-</button>
                                 <span>{num}</span>
                                 <button
                                   className="actionBtn"
