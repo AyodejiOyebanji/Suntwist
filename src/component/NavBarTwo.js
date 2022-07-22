@@ -126,6 +126,7 @@ function NavBarTwo() {
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <img src={Logo} alt="" srcset="" className="logo" />
+          
           <BsPeople size="20px" className="bsPeoplesmall" />
           {/* cart for small phone */}
           <Link to="/cart">
@@ -228,9 +229,9 @@ function NavBarTwo() {
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                     <li>
-                      <button class="  dropdown-item" type="button">
+                   <Link to="/customeraccount"> <button class="  dropdown-item" type="button">
                         My Account
-                      </button>
+                      </button></Link>   
                     </li>
                     <li>
                       <button class="dropdown-item" type="button">

@@ -9,6 +9,7 @@ import PaymentMethod from "./Pages/PaymentMethod";
 import PaystackdetailsPage from "./Pages/PaystackdetailsPage"
 import PaymentSummary from "./Pages/PaymentSummary"
 import Footer from "./component/Footer";
+import CustomerAccount from "./Pages/CustomerAccount";
 const App = () => {
   const globalState = useSelector((state) => {
     return state.price;
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/paymentmethod" element={<PaymentMethod />} />
         <Route path="/paystackdetailspage" element={<PaystackdetailsPage />} />
         <Route path="/PaymentSummary" element={<PaymentSummary />} />
+        <Route path="/customeraccount" element={<CustomerAccount/>} />
        
         
         
